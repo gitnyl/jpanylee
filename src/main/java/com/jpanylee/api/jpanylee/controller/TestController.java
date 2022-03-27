@@ -1,4 +1,4 @@
-package com.jpanylee.jpanylee.controller;
+package com.jpanylee.api.jpanylee.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.jpanylee.jpanylee.domain.entity;
+package com.jpanylee.api.jpanylee.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_test")
@@ -18,10 +19,10 @@ public class TestEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idx", nullable = false)
-    private Integer id;
+    private Integer idx;
 
     @Column(name = "id", length = 45)
-    private String id2;
+    private String id;
 
     @Column(name = "password", length = 100)
     private String password;
@@ -36,10 +37,10 @@ public class TestEntity {
     private String email;
 
     @Column(name = "rgdt")
-    private Instant rgdt;
+    private LocalDate rgdt;
 
     @Column(name = "updt", nullable = false)
-    private Instant updt;
+    private LocalDate updt;
 
     @Column(name = "rgidx", nullable = false)
     private Integer rgidx;
