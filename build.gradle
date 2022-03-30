@@ -58,7 +58,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web') {
         exclude group: 'org.springframework.boot', module:'spring-boot-starter-tomcat'
     }
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.2'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     compile 'org.springframework.boot:spring-boot-starter-aop'
 
@@ -74,7 +74,7 @@ dependencies {
     compile group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.15'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0'
 //    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
-    compile 'org.apache.commons:commons-lang3:3.10'
+    compile 'org.apache.commons:commons-lang3:3.12.0'
 
     // test
     testImplementation('org.springframework.boot:spring-boot-starter-test') {

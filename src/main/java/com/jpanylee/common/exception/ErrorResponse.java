@@ -8,16 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ErrorResponse {
+
     private Integer code;
     private String errMsg;
-    private Boolean result;
 
     public static ErrorResponse getFailResult(Integer code, String errMsg) {
-        return new ErrorResponse(code, errMsg,false);
+        return new ErrorResponse(code, errMsg);
     }
-
-    public static ErrorResponse getFailResult(Integer code, String errMsg, Boolean result) {
-        return new ErrorResponse(code, errMsg,false);
-    }
-
 }

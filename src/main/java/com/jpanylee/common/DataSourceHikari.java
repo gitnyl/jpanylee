@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component;
 @Setter
 @Getter
 @ConfigurationProperties("spring.datasource.hikari")
-public class DataSource {
-
+public class DataSourceHikari {
     private String driverClassName;
     private String url;
     private String username;
